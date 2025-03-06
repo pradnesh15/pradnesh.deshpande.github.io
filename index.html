@@ -9,24 +9,48 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Pradnesh Deshpande</h1>
-            <p>AI Engineer | Machine Learning | Software Developer</p>
+        <div class="header-container">
+            <img src="Images/profileAvatar.jpg" alt="Pradnesh Deshpande" class="profile-pic">
+            <div class="header-content">
+                <h1>Pradnesh Deshpande</h1>
+                <p>AI Engineer | Data Scientist | Software Developer</p>
+            </div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#impressions">Impressions</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#impressions">Impressions</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        
+        
     </header>
+    
 
-    <section id="about">
+    <!-- <section id="about">
         <h2>About Me</h2>
         <p>B.Tech AI & ML student at Anurag University, Hyderabad. Passionate about AI, Machine Learning, and Software Development.</p>
+    </section> -->
+
+    <section id="impressions">
+        <h2>Impressions</h2>
+        <div class="social-links">
+            <a href="https://github.com/pradnesh15" target="">
+                <img src="Images/github-logo.jpg" alt="GitHub">
+            </a>
+            <a href="https://leetcode.com/u/dpradnesh/" target="">
+                <img src="Images/leetcode-logo.png" alt="LeetCode"> 
+            </a>
+            <a href="https://www.linkedin.com/in/pradnesh-deshpande-3ba448246/" target="">
+                <img src="Images/linkedIn-logo.jpg" alt="LinkedIn">
+            </a>
+            <a href="https://www.hackerrank.com/profile/dpradynesh1504" target="">
+                <img src="Images/hackerrank-logo.png" alt="Hackerrank">
+            </a>
+        </div>
     </section>
 
     <section id="skills">
@@ -50,35 +74,76 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>GymFit Web App (MEAN Stack)</li>
-            <li>Voice-Activated AI Assistant (Gemini API)</li>
-            <li>Search Summarization (LLM-based)</li>
-            <li>Sentiment Analysis (Naïve Bayes Classifier)</li>
-            <li>Image Text-to-Audio (Tesseract OCR)</li>
-            <li>Used Bike Price Prediction (ML Model)</li>
-        </ul>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="slideshow-container">
-            <img class="cert-slide" src="Python_for_Data_Science.jpg" alt="Python for Data Science">
-            <img class="cert-slide" src="AWS_AIML_Aicte.jpg" alt="AWS AIML AICTE">
-            <img class="cert-slide" src="AWS_CloudFoundations.jpg" alt="AWS Cloud Foundations">
-            <img class="cert-slide" src="Matlab_Neat_Internship.jpg" alt="MATLAB Internship">
-            <img class="cert-slide" src="PCAP_Certificate.jpg" alt="PCAP Python Certification">
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/gymfit.jpg" alt="GymFit Web App">
+                <h3><a href="https://github.com/pradnesh15/gymfit" target="_blank">GymFit Web App (MEAN Stack)</a></h3>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/voice-assistant.jpg" alt="Voice-Activated AI Assistant">
+                <h3><a href="https://github.com/pradnesh15/voice-ai-assistant" target="_blank">Voice-Activated AI Assistant (Gemini API)</a></h3>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/search-summarization.jpg" alt="Search Summarization">
+                <h3><a href="https://github.com/pradnesh15/search-summarization" target="_blank">Search Summarization (LLM-based)</a></h3>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
+                <h3><a href="https://github.com/pradnesh15/sentiment-analysis" target="_blank">Sentiment Analysis (Naïve Bayes Classifier)</a></h3>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/image-to-audio.jpg" alt="Image Text-to-Audio">
+                <h3><a href="https://github.com/pradnesh15/image-to-audio" target="_blank">Image Text-to-Audio (Tesseract OCR)</a></h3>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/bike-price-prediction.jpg" alt="Used Bike Price Prediction">
+                <h3><a href="https://github.com/pradnesh15/bike-price-prediction" target="_blank">Used Bike Price Prediction (ML Model)</a></h3>
+            </div>
         </div>
     </section>
+    
 
-    <section id="impressions">
-        <h2>Impressions</h2>
-        <ul>
-            <li><a href="https://github.com/pradnesh15" target="_blank">GitHub</a></li>
-            <li><a href="https://leetcode.com/u/dpradnesh/" target="_blank">LeetCode</a></li>
-            <li><a href="https://www.hackerrank.com/profile/dpradynesh1504" target="_blank">HackerRank</a></li>
-        </ul>
+    <section id="certifications">
+        <div class="certifications-container">
+            <!-- Left Side: Certifications Heading -->
+            <div class="certifications-heading">
+                <h2>Certifications</h2>
+            </div>
+    
+            <!-- Right Side: Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/Python_for_Data_Science.jpg" alt="Python for Data Science" onclick="openFullscreen(this)">
+                </div>
+                <div class="slide">
+                    <img src="images/PCAP_Certificate.jpg" alt="PCAP Python Certification" onclick="openFullscreen(this)">
+                </div>
+                <div class="slide">
+                    <img src="images/AWS_CloudFoundations.jpg" alt="AWS Cloud Foundations" onclick="openFullscreen(this)">
+                </div>
+                <div class="slide">
+                    <img src="images/AWS_AIML_Aicte.jpg" alt="AWS AIML AICTE" onclick="openFullscreen(this)">
+                </div>
+                <div class="slide">
+                    <img src="images/Matlab_Neat_Internship.jpg" alt="MATLAB Internship" onclick="openFullscreen(this)">
+                </div>
+                
+            </div>
+        </div>
+    
+        <!-- Fullscreen Image Viewer -->
+        <div id="fullscreenViewer" class="fullscreen-container" onclick="closeFullscreen()">
+            <img id="fullscreenImage" src="">
+        </div>
     </section>
+    
+
+    
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -95,6 +160,5 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
-
 </body>
 </html>
